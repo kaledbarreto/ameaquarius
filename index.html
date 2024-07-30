@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html alang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-gray-100">
+    <section class="flex items-center justify-center h-1/2 w-screen overflow-hidden z-50 fixed top-1/4">
+      <h1 class="text-red-500 text-8xl font-bold">
+        Site em Construção
+      </h1>
+    </section>
+
+    <!-- header -->
+     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!-- logo -->
+         <img class="h-[50px]" src="assets/logo.png" alt="">
+        <!-- nav -->
+         <nav>
+          <!-- nav mobile trigger -->
+           <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-line text-4xl text-primary"></i>
+           </div>
+
+          <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Nosso Trabalho</a></li>
+            <li><a id="noticias_menu_item" href="news.html">Noticias</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+         </nav>
+      </div>
+     </header>
+
+    <!-- page wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!-- grid image -->
+      <div
+        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
+      <!-- hero -->
+      <section
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+      >
+        <div
+          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
+        >
+          <!-- text and image container -->
+          <div class="hero__text flex flex-col items-center text-center">
+            <h1 class="h1 text-white mb-4 mr-6">Bem Vindo a</h1>
+            <img class="h-[150px] mb-8" src="./assets/logo.png" alt="Logo" />
+            <p class="mb-8 text-white">
+              “Somos mais de 20 condomínios associados. </br> Somos a casa do seu
+              condomínio.”
+            </p>
+            <button class="btn btn-primary mx-auto">
+              Fale conosco
+              <i class="ri-whatsapp-line text-green-500"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <div class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]">
+            <!-- text -->
+            <div class="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px] flex flex-col items-center xl:items-start gap-8">
+              <h2 class="h2">Quem somos?</h2>
+              <p>
+                A <span class="font-bold">AMEAQUARIUS</span> é uma sociedade civil, pessoa jurídica de direito privado, sem fins lucrativos, regida por um estatuto e pela legislação específica. 
+                Sua organização administrativa é composta por um Colegiado, um Conselho Fiscal e uma Diretoria Executiva, eleitos em assembleia, sem qualquer tipo 
+                de remuneração pelo exercício de seus cargos.
+              </p>
+              <span class="font-bold">SOMOS O MAIOR CASE DE SUCESSO DE SALVADOR A SER REPLICADO EM TODO ESTADO DA BAHIA.</span>
+              <p>Conheça nosso trabalho e associe o seu condomínio, ou seja um parceiro <span class="font-bold">AMEAQUARIUS</span>, do comércio, serviços de saúde, educação, alimentação ou profissional liberal.</p>
+            </div>
+
+            <!-- img xl:max-w-none-->
+            <div class="about__image order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-[653px] xl:mx-0">
+              <img src="assets/about/img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- directors -->
+<section class="directors mt-[80px] xl:mt-[150px] relative z-20">
+  <div class="container mx-auto flex flex-col xl:flex-row items-start xl:items-stretch">
+    <!-- Text section -->
+    <div class="text-section w-full xl:w-1/2 pl-0 xl:pr-8 p-8 xl:pl-0 flex flex-col justify-between">
+      <div>
+        <h2 class="h2 mb-4 text-3xl">Conheça nossa Diretoria</h2>
+        <p class="mb-4">
+          Todos trabalham de forma voluntária!
+        </p>
+        <p class="mb-16">
+          Trabalhamos com foco em resultado e na
+          promoção da melhor qualidade de vida para todos.
+        </p>
+        <p class="font-semibold mb-16">
+          JUNTOS, VAMOS CUIDANDO DE NOSSO BAIRRO
+          AQUARIUS!
+        </p>
+      </div>
+      <div class="flex justify-center mb-32">
+        <img class="h-[80px]" src="assets/logo.png" alt="">
+      </div>
+    </div>
+    <!-- Cards section -->
+    <div class="cards-section w-full xl:w-1/2 pr-0 xl:pl-8 p-8 xl:pr-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="/assets/directors/director1.jpg" alt="Mauricio Xavier" class="w-full h-[300px] object-cover object-top">
+        <p class="mt-2 text-center font-bold">Oscar</p>
+        <p class="mt-2 text-left text-sm">
+          Advogado e Servidor Público Federal /MPTBA (aposentado). Diretor da AmeAquarius desde 2018.
+          <br>
+          <br>
+          (71) 99991-9999<br>
+          diretor1@exemplo.com<br>
+          @diretor1
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="/assets/directors/director2.jpg" alt="Diretor 2" class="w-full h-[300px] object-cover object-top">
+        <p class="mt-2 text-center font-bold">Theodomiro Neto</p>
+        <p class="mt-2 text-left text-sm">
+          Bacharel em Direito e Empresário. Morador do Aquarius há 10 anos
+          <br>
+          <br>
+          (71) 99992-9999<br>
+          diretor2@exemplo.com<br>
+          @diretor2
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="/assets/directors/director3.jpg" alt="Diretor 3" class="w-full h-[300px] object-cover object-top">
+        <p class="mt-2 text-center font-bold">Karine Rocha</p>
+        <p class="mt-2 text-left text-sm">
+          Presidente Comissão Direito do 3° Setor OAB/BA.
+          Diretora ABMCJ/BA. 
+          Assessora jurídica para OSCS
+          Palestrante e treinadora
+          <br>
+          <br>
+          (71) 99993-9999<br>
+          diretor3@exemplo.com<br>
+          @diretor3
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="/assets/directors/director4.jpg" alt="Mauricio Xavier" class="w-full h-[300px] object-cover object-top">
+        <p class="mt-2 text-center font-bold">Mauricio Xavier</p>
+        <p class="mt-2 text-left text-sm">
+          Advogado áreas de sucessões, consumidor, saúde, civil. Residente no Aquárius desde 1990
+          <br>
+          <br>
+          (71) 99981-7877
+          <br>
+          mpx.adv@hotmail.com
+          <br>
+          @maurciopxavier
+        </p>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="/assets/directors/director5.jpg" alt="Diretor 5" class="w-full h-[300px] object-cover object-top">
+        <p class="mt-2 text-center font-bold">Diretor 5</p>
+        <p class="mt-2 text-left text-sm">
+          Descrição do Diretor 5
+          <br>
+          <br>
+          (71) 99995-9999<br>
+          diretor5@exemplo.com<br>
+          @diretor5
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="/assets/directors/director6.jpg" alt="Diretor 6" class="w-full h-[300px] object-cover object-top">
+        <p class="mt-2 text-center font-bold">Diretor 6</p>
+        <p class="mt-2 text-left text-sm">
+          Descrição do Diretor 6
+          <br>
+          <br>
+          (71) 99996-9999<br>
+          diretor6@exemplo.com<br>
+          @diretor6
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- temporary div -->
+      <div class="h-[3000px]"></div>
+
+    </main>
+
+    <!-- scroll reveal js -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

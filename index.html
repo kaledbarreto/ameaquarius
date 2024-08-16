@@ -51,6 +51,7 @@
       <div
         class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
       ></div>
+
       <!-- hero -->
       <section
         class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
@@ -228,10 +229,11 @@
         </div>
       </section>
 
+      <!-- stats -->
       <section class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] flex flex-col items-center gap-20">
         <div class="flex flex-col items-center gap-4">
           <h1 class="h2">Ações e Conquistas</h1>
-          <p>Em 6 anos de atuação, ja conquistamos diversas melhorias para o antigo loteamento Aquarius.</p>
+          <p class="text-center">Em 6 anos de atuação, ja conquistamos diversas melhorias para o antigo loteamento Aquarius.</p>
         </div>
         <div class="container mx-auto">
           <!-- grid -->
@@ -255,7 +257,48 @@
         </div>
       </section>
 
+<!-- Carousel Section -->
+<section class="carousel-section mt-[80px] xl:mt-[150px] relative z-20">
+  <div class="container mx-auto flex flex-col xl:flex-row items-center gap-8 xl:gap-[74px]">
+    <!-- Text and Logo on the left -->
+    <div class="text-section w-full xl:w-1/2 flex flex-col justify-center items-center text-center xl:text-left">
+      <h2 class="h2 mb-4 text-6xl font-bold">Associe-se</h2>
+      <img class="h-[100px] mb-4" src="assets/logo.png" alt="Logo" />
+      <p class="text-2xl mb-8">e vamos fortalecer esse trabalho.</p>
+    </div>
 
+    <!-- Carousel on the right -->
+    <div class="carousel-container w-full xl:w-1/2 overflow-hidden relative">
+      <div class="swiper-container w-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/carousel/foto01.png" alt="Imagem Aleatória 1" class="w-full h-[300px] object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/carousel/foto02.png" alt="Imagem Aleatória 2" class="w-full h-[300px] object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/carousel/foto03.png" alt="Imagem Aleatória 3" class="w-full h-[300px] object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/carousel/foto04.png" alt="Imagem Aleatória 4" class="w-full h-[300px] object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/carousel/foto05.png" alt="Imagem Aleatória 5" class="w-full h-[300px] object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/carousel/foto06.png" alt="Imagem Aleatória 6" class="w-full h-[300px] object-cover" />
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2"></div>
+        <div class="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2"></div>
+      </div>
+    </div>
+  </div>
+</section> 
 
       <!-- temporary div -->
       <div class="h-[3000px]"></div>
@@ -267,5 +310,26 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        // Configuration options
+        loop: true, // Enable looping
+        autoplay: {
+          delay: 3000, // Time in milliseconds between slides
+          disableOnInteraction: false, // Keep autoplay running even after user interaction
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

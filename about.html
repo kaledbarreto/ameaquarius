@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!-- logo -->
+        <img class="h-[50px]" src="assets/logo.png" alt="logo" />
+        <!-- nav -->
+        <nav>
+          <!-- nav mobile trigger -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-line text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#nosso-trabalho">Nosso Trabalho</a></li>
+            <li><a href="/news">Noticias</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- page wrapper -->
+    <main class="h-[calc(100vh-90px)] flex justify-center bg-gray-100">
+      <!-- História -->
+      <section
+        class="history mt-[80px] xl:mt-[100px] relative z-20 bg-gray-50 py-16"
+      >
+        <div class="container mx-auto px-4">
+          <!-- Título principal -->
+          <h2 class="h2 text-center mb-4">Nossa História</h2>
+
+          <!-- Subtítulo centralizado abaixo do título -->
+          <h3 class="text-2xl font-semibold text-center mb-12">
+            2018 e 2019 - O Início de Tudo
+          </h3>
+
+          <!-- Linha do tempo -->
+          <div class="flex flex-col space-y-12">
+            <!-- Evento 1 -->
+            <div class="flex flex-col lg:flex-row items-center">
+              <!-- Texto -->
+              <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
+                <h4 class="text-xl font-bold mb-2">
+                  1º - Início do Loteamento Aquarius
+                </h4>
+                <p class="text-gray-700">
+                  O bairro Aquarius começa a ser sonhado, com a chegada dos
+                  primeiros moradores e a criação de uma visão de comunidade.
+                </p>
+              </div>
+              <!-- Imagem -->
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+                <img
+                  src="assets/history/aqua1.jpg"
+                  alt="Início do Loteamento Aquarius"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                />
+              </div>
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="flex flex-col lg:flex-row items-center">
+              <!-- Texto -->
+              <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
+                <h4 class="text-xl font-bold mb-2">
+                  2º - Construção dos Primeiros Lotes
+                </h4>
+                <p class="text-gray-700">
+                  A construção das primeiras casas trouxe vida ao bairro, que
+                  começou a ganhar forma.
+                </p>
+              </div>
+              <!-- Imagem -->
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+                <img
+                  src="assets/history/aqua2.jpg"
+                  alt="Construção dos Primeiros Lotes"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                />
+              </div>
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="flex flex-col lg:flex-row items-center">
+              <!-- Texto -->
+              <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
+                <h4 class="text-xl font-bold mb-2">
+                  3º - Formação da Comunidade
+                </h4>
+                <p class="text-gray-700">
+                  A comunidade de Aquarius começa a se fortalecer, com eventos e
+                  encontros promovidos pelos moradores.
+                </p>
+              </div>
+              <!-- Imagem -->
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+                <img
+                  src="assets/history/aqua3.jpg"
+                  alt="Formação da Comunidade"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                />
+              </div>
+            </div>
+
+            <!-- Evento 4 -->
+            <div class="flex flex-col lg:flex-row items-center">
+              <!-- Texto -->
+              <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
+                <h4 class="text-xl font-bold mb-2">
+                  4º - Parcerias Políticas Iniciais
+                </h4>
+                <p class="text-gray-700">
+                  Apoio de representantes do legislativo, como Paulo Câmara e
+                  André Fraga, que colaboraram com questões de infraestrutura e
+                  segurança pública. Imagem Sugerida: Foto de Paulo Câmara ou
+                  André Fraga em visita ao bairro ou em evento com a associação.
+                </p>
+              </div>
+              <!-- Imagem -->
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+                <img
+                  src="assets/history/aqua4.jpg"
+                  alt="Formação da Comunidade"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- scroll reveal js -->
+    <script src="js/scrollreveal.min.js"></script>
+  </body>
+</html>

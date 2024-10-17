@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato</title>
+    <title>Sobre</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/output.css" />
     <!-- ICONS -->
@@ -48,24 +48,23 @@
     </header>
 
     <!-- page wrapper -->
-    <main class="h-[calc(100vh-90px)] flex justify-center bg-gray-100">
+    <main class="min-h-[calc(100vh-90px)] flex justify-center bg-[#cfe6d8ec]">
       <!-- História -->
-      <section
-        class="history mt-[80px] xl:mt-[100px] relative z-20 bg-gray-50 py-16"
-      >
-        <div class="container mx-auto px-4">
-          <!-- Título principal -->
-          <h2 class="h2 text-center mb-4">Nossa História</h2>
+      <section class="history relative z-20 py-16">
+        <div class="container mx-auto px-4 flex flex-col items-center gap-2">
+          <h2 class="h2 text-center">Nossa História</h2>
+          <hr class="border border-b-[#003825] border-b-8 w-[400px]" />
+          <div
+            class="text-[#292f36] font-semibold text-center mb-10 flex flex-col gap-1 mt-14"
+          >
+            <span class="text-4xl">2018 a 2019</span>
+            <span class="text-3xl">O Início de Tudo</span>
+          </div>
 
-          <!-- Subtítulo centralizado abaixo do título -->
-          <h3 class="text-2xl font-semibold text-center mb-12">
-            2018 e 2019 - O Início de Tudo
-          </h3>
-
-          <!-- Linha do tempo -->
-          <div class="flex flex-col space-y-12">
+          <!-- Linha do tempo 2018 e 2019 -->
+          <div class="flex flex-col">
             <!-- Evento 1 -->
-            <div class="flex flex-col lg:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center relative">
               <!-- Texto -->
               <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
                 <h4 class="text-xl font-bold mb-2">
@@ -77,17 +76,20 @@
                 </p>
               </div>
               <!-- Imagem -->
-              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6 relative">
+                <div
+                  class="absolute w-[90%] h-[300px] rounded bg-red-500 bottom-[15px] right-[15px] z-0"
+                ></div>
                 <img
                   src="assets/history/aqua1.jpg"
                   alt="Início do Loteamento Aquarius"
-                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow relative z-10"
                 />
               </div>
             </div>
 
             <!-- Evento 2 -->
-            <div class="flex flex-col lg:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center relative">
               <!-- Texto -->
               <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
                 <h4 class="text-xl font-bold mb-2">
@@ -100,17 +102,20 @@
                 </p>
               </div>
               <!-- Imagem -->
-              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6 relative">
+                <div
+                  class="absolute w-[90%] h-[300px] rounded bg-red-500 bottom-[15px] right-[15px] z-0"
+                ></div>
                 <img
                   src="assets/history/aqua2.jpg"
-                  alt="Construção dos Primeiros Lotes"
-                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                  alt="Início do Loteamento Aquarius"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow relative z-10"
                 />
               </div>
             </div>
 
             <!-- Evento 3 -->
-            <div class="flex flex-col lg:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center relative">
               <!-- Texto -->
               <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
                 <h4 class="text-xl font-bold mb-2">
@@ -123,17 +128,20 @@
                 </p>
               </div>
               <!-- Imagem -->
-              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6 relative">
+                <div
+                  class="absolute w-[90%] h-[300px] rounded bg-red-500 bottom-[15px] right-[15px] z-0"
+                ></div>
                 <img
                   src="assets/history/aqua3.jpg"
-                  alt="Formação da Comunidade"
-                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                  alt="Início do Loteamento Aquarius"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow relative z-10"
                 />
               </div>
             </div>
 
             <!-- Evento 4 -->
-            <div class="flex flex-col lg:flex-row items-center">
+            <div class="flex flex-col lg:flex-row items-center relative">
               <!-- Texto -->
               <div class="w-full lg:w-1/2 order-2 lg:order-1 p-6">
                 <h4 class="text-xl font-bold mb-2">
@@ -146,12 +154,298 @@
                 </p>
               </div>
               <!-- Imagem -->
-              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6">
+              <div class="w-full lg:w-1/2 order-1 lg:order-2 p-6 relative">
+                <div
+                  class="absolute w-[90%] h-[300px] rounded bg-red-500 bottom-[15px] right-[15px] z-0"
+                ></div>
                 <img
                   src="assets/history/aqua4.jpg"
-                  alt="Formação da Comunidade"
-                  class="w-full h-[300px] object-cover mx-auto rounded shadow"
+                  alt="Início do Loteamento Aquarius"
+                  class="w-full h-[300px] object-cover mx-auto rounded shadow relative z-10"
                 />
+              </div>
+            </div>
+          </div>
+
+          <!-- Linha do tempo 2020 a 2022 -->
+          <div class="w-full mt-24">
+            <div
+              class="text-[#292f36] font-semibold text-center mb-16 flex flex-col gap-1 mt-14"
+            >
+              <span class="text-4xl">2020 a 2022</span>
+              <span class="text-3xl"
+                >Apoio Político, Empresarial, Fortalecimento e
+                Reconhecimento</span
+              >
+            </div>
+
+            <!-- Evento 1 -->
+            <div>
+              <div
+                class="w-full flex flex-row justify-around items-center relative"
+              >
+                <div
+                  class="absolute w-full h-[100px] bg-[#003825] rounded top-[150px] z-0"
+                ></div>
+                <!-- Imagem 1 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua5.jpg"
+                    alt="Imagem 1"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+
+                <!-- Imagem 2 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua6.jpg"
+                    alt="Imagem 2"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+
+                <!-- Imagem 3 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua7.jpg"
+                    alt="Imagem 3"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+
+                <!-- Imagem 4 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua8.jpg"
+                    alt="Imagem 4"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+              </div>
+              <div class="mt-20 px-8">
+                <h4 class="text-xl font-bold mb-2">
+                  1º - Infraestrutura Básica
+                </h4>
+                <p class="text-gray-700">
+                  A pavimentação de ruas e a modernização da iluminação pública
+                  marcaram o início das transformações que viriam a melhorar
+                  significativamente a qualidade de vida no bairro.
+                </p>
+              </div>
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="mt-24">
+              <div
+                class="w-full flex flex-row justify-around items-center relative"
+              >
+                <div
+                  class="absolute w-full h-[100px] bg-[#003825] rounded top-[150px] z-0"
+                ></div>
+                <!-- Imagem 1 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua9.jpg"
+                    alt="Imagem 2"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+
+                <!-- Imagem 2 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua10.jpg"
+                    alt="Imagem 1"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+
+                <!-- Imagem 3 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua11.jpg"
+                    alt="Imagem 4"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+
+                <!-- Imagem 4 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua12.jpg"
+                    alt="Imagem 3"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+              </div>
+              <div class="mt-20 px-8">
+                <h4 class="text-xl font-bold mb-2">
+                  2º - Crescimento do Bairro
+                </h4>
+                <p class="text-gray-700">
+                  A AMEAQUARIUS passou a se consolidar, atraindo um número
+                  crescente de novos moradores e empresários locais,
+                  fortalecendo a comunidade e a economia do bairro.
+                </p>
+              </div>
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="mt-24">
+              <div
+                class="w-full flex flex-row justify-around items-center relative"
+              >
+                <div
+                  class="absolute w-full h-[100px] bg-[#003825] rounded top-[150px] z-0"
+                ></div>
+                <!-- Imagem 1 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua13.jpg"
+                    alt="Imagem 1"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+
+                <!-- Imagem 2 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua14.jpg"
+                    alt="Imagem 2"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+
+                <!-- Imagem 3 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua15.jpg"
+                    alt="Imagem 3"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+
+                <!-- Imagem 4 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua16.jpg"
+                    alt="Imagem 4"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+              </div>
+              <div class="mt-20 px-8">
+                <h4 class="text-xl font-bold mb-2">3º - Melhorias Visíveis</h4>
+                <p class="text-gray-700">
+                  A urbanização do bairro avançou de forma expressiva,
+                  proporcionando maior segurança e organização, graças ao
+                  trabalho conjunto entre moradores e a associação.
+                </p>
+              </div>
+            </div>
+
+            <!-- Evento 4 -->
+            <div class="mt-24">
+              <div
+                class="w-full flex flex-row justify-around items-center relative"
+              >
+                <div
+                  class="absolute w-full h-[100px] bg-[#003825] rounded top-[150px] z-0"
+                ></div>
+                <!-- Imagem 1 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua17.jpg"
+                    alt="Imagem 2"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+
+                <!-- Imagem 2 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua18.jpg"
+                    alt="Imagem 1"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+
+                <!-- Imagem 3 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[25px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua19.jpg"
+                    alt="Imagem 4"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[20px]"
+                  />
+                </div>
+
+                <!-- Imagem 4 -->
+                <div class="relative w-[250px] h-[200px]">
+                  <div
+                    class="absolute w-full h-full bg-red-500 rounded right-[5px] top-[-15px] z-0"
+                  ></div>
+                  <img
+                    src="assets/history/aqua20.jpg"
+                    alt="Imagem 3"
+                    class="w-full h-full object-cover rounded shadow relative z-10 transform translate-y-[-20px]"
+                  />
+                </div>
+              </div>
+              <div class="mt-20 px-8">
+                <h4 class="text-xl font-bold mb-2">
+                  4º - Consolidação de Parcerias Políticas
+                </h4>
+                <p class="text-gray-700">
+                  O apoio de figuras políticas foi fundamental para viabilizar
+                  melhorias contínuas no bairro, criando um elo importante entre
+                  a população e o poder público.
+                </p>
               </div>
             </div>
           </div>

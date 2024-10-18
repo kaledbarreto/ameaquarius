@@ -20,32 +20,8 @@
     />
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <style>
-      .card {
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-      }
-      .card img {
-        width: 100%;
-        height: auto;
-      }
-      .card-content {
-        padding: 20px;
-      }
-      .card-style-1 {
-        background-color: #f9f9f9;
-      }
-      .card-style-2 {
-        background-color: #e0f7fa;
-      }
-      .card-style-3 {
-        background-color: #ffebee;
-      }
-    </style>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 min-h-screen">
     <!-- header -->
     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
       <div class="container mx-auto flex justify-between h-full items-center">
@@ -57,67 +33,134 @@
           <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
             <i class="ri-menu-line text-4xl text-primary"></i>
           </div>
+
           <ul
             class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav_menu"
           >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#sobre">Sobre</a></li>
-            <li><a href="index.html#nosso-trabalho">Nosso Trabalho</a></li>
-            <li><a href="/news">Noticias</a></li>
-            <li><a href="index.html#contato">Contato</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a id="sobre_menu_item" href="about.html">Sobre</a></li>
+            <li><a href="#">Nosso Trabalho</a></li>
+            <li><a id="noticias_menu_item" href="news.html">Noticias</a></li>
+            <li><a id="contato_menu_item" href="contact.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- page wrapper -->
-    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
-      <section
-        class="flex items-center justify-center h-1/2 w-screen overflow-hidden z-50 fixed top-1/4"
-      >
-        <h1 class="text-red-500 text-8xl font-bold">Site em Construção</h1>
-      </section>
-
-      <section class="container mx-auto mt-8">
-        <h1 class="text-center text-3xl font-bold mb-8">News</h1>
-        <div class="flex flex-col items-center">
-          <!-- Card 1 -->
-          <div class="card card-style-1 w-full max-w-lg flex flex-col">
-            <div class="w-full h-48 bg-blue-500"></div>
-            <div class="card-content">
-              <h2 class="text-xl font-bold mb-2">News Title 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
-            </div>
+    <main class="max-w-[1920px] bg-white overflow-hidden min-h-screen">
+      <!-- work -->
+      <section class="work mt-[80px] md:mt-[100px] relative z-20 mb-12">
+        <div class="container mx-auto xl:px-0">
+          <!-- text -->
+          <div>
+            <h2 class="work__title h2 mb-8">Aquarius Notícias</h2>
           </div>
-          <!-- Card 2 -->
-          <div class="card card-style-2 w-full max-w-lg flex flex-row-reverse">
-            <div class="w-1/2 h-48 bg-green-500"></div>
-            <div class="card-content w-1/2">
-              <h2 class="text-xl font-bold mb-2">News Title 2</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
+          <!-- grid -->
+          <div
+            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- grid item -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img
+                class="mb-6 w-[550px] h-[525px] object-cover"
+                src="./assets/news/card_news_01.jpg"
+                alt=""
+              />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">TV</h3>
+                  <p>Programas de TV</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
             </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="card card-style-3 w-full max-w-lg flex flex-row">
-            <div class="w-1/4 h-48 bg-red-500"></div>
-            <div class="card-content w-3/4">
-              <h2 class="text-xl font-bold mb-2">News Title 3</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
+            <!-- grid item -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img
+                class="mb-6 w-[550px] h-[525px] object-cover"
+                src="./assets/news/card_news_02.jpg"
+                alt=""
+              />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Podcasts</h3>
+                  <p>Conversas e Entrevistas</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- grid item -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img
+                class="mb-6 w-[550px] h-[525px] object-cover"
+                src="./assets/news/card_news_03.jpg"
+                alt=""
+              />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Revistas</h3>
+                  <p>Artigos e Tendências</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- grid item -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img
+                class="mb-6 w-[550px] h-[525px] object-cover"
+                src="./assets/news/card_news_04.jpg"
+                alt=""
+              />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Site de Notícias</h3>
+                  <p>Últimas Notícias e Atualizações</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="relative z-50 bg-gray-800 text-white py-6">
+      <div
+        class="container mx-auto px-4 flex flex-col items-center justify-between"
+      >
+        <div class="text-center">
+          <p class="text-sm">
+            &copy; 2024 AmeAquarius. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- main js -->
     <script src="js/main.js"></script>

@@ -26,22 +26,23 @@
     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
       <div class="container mx-auto flex justify-between h-full items-center">
         <!-- logo -->
-        <img class="h-[50px]" src="assets/logo.png" alt="logo" />
+        <img class="h-[50px]" src="assets/logo.png" alt="" />
         <!-- nav -->
         <nav>
           <!-- nav mobile trigger -->
           <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
             <i class="ri-menu-line text-4xl text-primary"></i>
           </div>
+
           <ul
             class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav_menu"
           >
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#sobre">Sobre</a></li>
-            <li><a href="index.html#nosso-trabalho">Nosso Trabalho</a></li>
-            <li><a href="/news">Noticias</a></li>
-            <li><a href="index.html#contato">Contato</a></li>
+            <li><a id="sobre_menu_item" href="about.html">Sobre</a></li>
+            <li><a href="#">Nosso Trabalho</a></li>
+            <li><a id="noticias_menu_item" href="news.html">Noticias</a></li>
+            <li><a id="contato_menu_item" href="contact.html">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -641,6 +642,18 @@
         </div>
       </section>
     </main>
+
+    <footer class="relative z-50 bg-gray-800 text-white py-6">
+      <div
+        class="container mx-auto px-4 flex flex-col items-center justify-between"
+      >
+        <div class="text-center">
+          <p class="text-sm">
+            &copy; 2024 AmeAquarius. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- main js -->
     <script src="js/main.js"></script>

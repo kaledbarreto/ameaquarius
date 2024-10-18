@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html alang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmeAquarius</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-gray-100 h-screen">
+    <!-- header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!-- logo -->
+        <img class="h-[50px]" src="assets/logo.png" alt="" />
+        <!-- nav -->
+        <nav>
+          <!-- nav mobile trigger -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-line text-4xl text-primary"></i>
+          </div>
+
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a id="sobre_menu_item" href="about.html">Sobre</a></li>
+            <li><a id="noticias_menu_item" href="news.html">Noticias</a></li>
+            <li><a href="documents.html">Documentos</a></li>
+            <li><a id="contato_menu_item" href="contact.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- page wrapper -->
+    <main
+      class="max-w-[1920px] mx-auto bg-white overflow-hidden h-[calc(100vh-90px-67.98px)] flex flex-col items-center p-8"
+    >
+      <h1 class="text-2xl font-bold mb-4">
+        ATA DE FUNDAÇÃO E ESTATUTO REGISTRADOS DA AMEAQUARIUS
+      </h1>
+      <iframe
+        src="./assets/documents/ATA DE FUNDAÇÃO E ESTATUTO REGISTRADOS DA AMEAQUARIUS.pdf"
+        class="w-5/6 h-full"
+        title="Visualização da Ata"
+      ></iframe>
+
+      <h1 class="text-2xl font-bold mt-12">Outros documentos</h1>
+
+      <div
+        class="flex items-center justify-between border-b border-gray-300 mt-6 w-11/12 max-w-lg mx-auto"
+      >
+        <span class="text-gray-800 font-semibold text-sm">
+          ATA E ESTATUTO ALTERADO EM 08-11-2022.pdf
+        </span>
+        <a
+          href="./assets/documents/ATA E ESTATUTO ALTERADO EM 08-11-2022.pdf"
+          download
+          class="p-2 text-gray-500 hover:text-blue-600 transition duration-300"
+        >
+          <i class="ri-download-line text-2xl"></i>
+        </a>
+      </div>
+    </main>
+
+    <footer class="relative z-50 bg-gray-800 text-white py-6">
+      <div
+        class="container mx-auto px-4 flex flex-col items-center justify-between"
+      >
+        <div class="text-center">
+          <!-- Logo ou Nome da Empresa -->
+          <p class="text-sm">
+            &copy; 2024 AmeAquarius. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll reveal js -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // Configuration options
+        loop: true, // Enable looping
+        autoplay: {
+          delay: 3000, // Time in milliseconds between slides
+          disableOnInteraction: false, // Keep autoplay running even after user interaction
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -14,8 +14,8 @@ module.exports = {
       xl: "1200px",
     },
     fontFamily: {
-      primary: "DM Serif Display",
-      secondary: "Jost",
+      primary: "Inter, sans-serif",
+      secondary: "Arial, sans-serif",
     },
     backgroundImage: {
       hero: "url(/assets/hero/bg.png)",

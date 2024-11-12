@@ -33,7 +33,6 @@
           <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
             <i class="ri-menu-line text-4xl text-primary"></i>
           </div>
-
           <ul
             class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav_menu"
@@ -54,9 +53,35 @@
     >
       <section class="container mx-auto">
         <h1 class="text-center text-5xl font-bold mb-8">Contate-nos</h1>
-        <div class="flex flex-col items-center">
-          <!-- Form -->
-          <div class="w-full max-w-lg p-6 bg-white shadow-lg rounded-lg">
+        <div
+          class="flex flex-col lg:flex-row lg:items-start lg:justify-center gap-8"
+        >
+          <!-- Card de informações da esquerda -->
+          <div
+            class="flex-1 flex-col justify-between h-[485px] max-w-md p-6 bg-white shadow-lg rounded-lg text-gray-700 flex items-center"
+          >
+            <div class="space-y-2 text-base">
+              <h1 class="text-[22px] font-bold text-center mt-4 mb-8">
+                Endereço
+              </h1>
+              <p class="text-[18px]">
+                Rua Desembargador Álvaro Clemente de Oliveira
+              </p>
+              <br />
+              <p class="text-[18px]">
+                41771-020 <br />
+                Bairro Aquarius <br />
+                Salvador - Bahia
+              </p>
+              <p class="text-[18px]"></p>
+              <br />
+              <!-- <p class="text-[18px]">(XX) XXXXX-XXXX</p> -->
+            </div>
+
+            <img class="h-[100px] mb-4" src="assets/logo.png" alt="Logo" />
+          </div>
+          <!-- Formulário da direita -->
+          <div class="flex-1 max-w-md p-6 bg-white shadow-lg rounded-lg">
             <form
               onsubmit="sendEmail(); reset(); return false;"
               action="#"
@@ -64,7 +89,7 @@
               class="flex flex-col gap-4"
             >
               <label for="name" class="flex flex-col">
-                <span class="font-semibold mb-1">Nome</span>
+                <span class="font-semibold text-sm mb-1">Nome</span>
                 <input
                   type="text"
                   id="name"
@@ -75,7 +100,7 @@
                 />
               </label>
               <label for="email" class="flex flex-col">
-                <span class="font-semibold mb-1">Email</span>
+                <span class="font-semibold text-sm mb-1">Email</span>
                 <input
                   type="email"
                   id="email"
@@ -86,7 +111,7 @@
                 />
               </label>
               <label for="message" class="flex flex-col">
-                <span class="font-semibold mb-1">Mensagem</span>
+                <span class="font-semibold text-sm mb-1">Mensagem</span>
                 <textarea
                   id="message"
                   name="message"

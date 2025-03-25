@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspaper articles</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <!-- header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!-- logo -->
+        <img class="h-[50px]" src="assets/logo.png" alt="" />
+        <!-- nav -->
+        <nav>
+          <!-- nav mobile trigger -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-line text-4xl text-primary"></i>
+          </div>
+
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a id="sobre_menu_item" href="about.html">Sobre</a></li>
+            <li><a id="noticias_menu_item" href="news.html">Noticias</a></li>
+            <li><a href="documents.html">Documentos</a></li>
+            <li><a id="contato_menu_item" href="contact.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- page wrapper -->
+    <main class="max-w-[1920px] bg-white overflow-hidden min-h-screen">
+      <!-- work -->
+      <section class="work mt-[80px] md:mt-[100px] relative z-20 mb-12">
+        <div class="container mx-auto xl:px-0">
+          <!-- text -->
+          <div>
+            <h2 class="work__title h2 mb-8">Aquarius Notícias</h2>
+          </div>
+          <div class="flex flex-col gap-12">
+            <img class="w-[900px] self-center" src="./assets/news/articles/img1.jpg" alt="">
+            <div class="flex flex-col">
+              <h3 class="text-3xl mb-8 font-bold">Embrião do Aquarius remonta ao século XIX e à bucólica Fazenda Pituba</h3>
+
+              <p>
+                <span class="font-bold">Histórico do Loteamento Aquarius:</span>
+                <br/>
+                O Loteamento Aquarius tem suas origens na Fazenda Pituba, uma área que remonta ao século XIX, quando foi doada por Tomé de Souza ao Conde de Castanheira, Dom Antônio Ataíde.
+  
+                Em 1865, o Barão do Rio Vermelho urbanizou a fazenda, que era um vasto coqueiral com dunas, lagoas e uma pequena vila de pescadores.
+  
+                No início do século XX, as terras foram vendidas a Joventino Silva, que iniciou o loteamento da região, visando criar um bairro de alto padrão.
+                
+                <br/>
+                <br/>
+                <span class="font-bold">Desenvolvimento Urbano:</span>
+                <br/>
+                Na década de 1920, a região começou a atrair veranistas e, posteriormente, residentes permanentes, com a construção de casas de luxo e pequenos prédios.
+  
+                A urbanização foi impulsionada por grandes incorporadoras, como a Construtora Norberto Odebrecht, que adquiriu terras na região.
+  
+                A partir dos anos 1960, a Tradição S/A Crédito Imobiliário comprou as terras que deram origem ao Loteamento Aquarius, batizado em referência à música "Age of Aquarius", símbolo de uma nova era de paz e amor.
+                
+                <br/>
+                <br/>
+                <span class="font-bold">Infraestrutura e Planejamento:</span>
+                <br/>
+                O loteamento foi formalizado em 1973, com a criação de vias públicas, sistemas de esgoto, água potável e energia elétrica.
+  
+                A Construtora Fator assumiu o desenvolvimento do Aquarius na década de 1980, entregando os primeiros condomínios em 1992 e investindo em infraestrutura, como a Praça Aquarius e o Hospital da Bahia.
+                
+                <br/>
+                <br/>
+                <span class="font-bold">Impacto na Região:</span>
+                <br/>
+                O Aquarius consolidou-se como uma área nobre, com foco em qualidade de vida, arborização e espaços de convivência.
+  
+                A região também se beneficiou da construção de avenidas como Tancredo Neves, Antonio Carlos Magalhães e Magalhães Neto, que conectaram o bairro ao novo centro financeiro de Salvador.
+
+                <br/>
+                <br/>
+                <span class="font-bold">Legado:</span>
+                <br/>
+                O Loteamento Aquarius é um exemplo de planejamento urbano que valoriza a sustentabilidade e o bem-estar dos moradores, mantendo-se como uma das áreas mais desejadas da cidade.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-12 mt-48">
+            <img class="w-[900px] self-center" src="./assets/news/articles/img2.png" alt="">
+            <div class="flex flex-col">
+              <h3 class="text-3xl mb-8 font-bold">Novo projeto de A TARDE foca no Aquarius, desmembrado da Pituba</h3>
+              <p>
+                Entre eventos comunitários, momentos de lazer em família e na rotina do trabalho, é nos bairros que a vida acontece. Para dar mais atenção aos assuntos locais que afetam um grande número de pessoas, o Grupo A TARDE lança o projeto A TARDE Bairros, com este especial sobre o Aquarius, cujo embrião se formou na Pituba, terceiro mais populoso de Salvador, com 65.160 habitantes (IBGE).
+                <br/>
+                <br/>
+                Em sua missão centenária de bem informar o cidadão, o Grupo pretende se aproximar mais dos bairros, conhecer o perfil dos moradores de cada um deles, saber dos interesses desse público, suas necessidades e demandas, suas histórias e personagens, e fazer uma cobertura completa, em nível local, dos fatos mais importantes.
+                <br/>
+                <br/>
+                Cada comunidade conhece bem o local onde vive, o seu comércio, serviços públicos disponíveis e as histórias de seus moradores. E é ela que usufrui diretamente dos benefícios de cada bairro e da luta por melhorias em sua região.
+                <br/>
+                <br/>
+                A relação próxima do jornalismo de A TARDE com as comunidades possibilita compreender as necessidades de informação de cada área, dar voz ao cidadão sobre os fatos de sua rua, além de incentivar o debate público, em nível local, e garantir o amplo direito à informação.
+                <br/>
+                <br/>
+                Ao amplificar a divulgação de notícias nos bairros, o jornal possibilita às comunidades conhecer e exigir os seus direitos, cobrar mudanças, valorizar os representantes e celebrar manifestações culturais locais. É quando a comunidade se conecta com o seu bairro e acompanha os acontecimentos que ela pode discernir, fiscalizar e cobrar melhorias do poder público, influenciando diretamente o desenvolvimento de políticas públicas.
+                <br/>
+                <br/>
+                Esta nova fase do jornalismo hiperlocal do Grupo A TARDE em um mundo pautado pela globalização resgata o interesse pela informação de proximidade, descentraliza a produção de notícias e dá à comunidade a oportunidade de se expressar e criar laços de identidade com o local onde vive. Possibilita também ao cidadão procurar a imprensa para denunciar determinados problemas e injustiças.
+                <br/>
+                <br/>
+                O novo projeto vai focar na cobertura jornalística do que acontece nos bairros de Salvador, suas particularidades, suas histórias e personagens, a exemplo do que era feito na década de 1960, com a página ‘A TARDE nos Bairros’, e na coluna dominical ‘Defesa do Bairro’, na década de 1980.
+              </p>
+              <img class="w-[900px] self-center mt-12" src="./assets/news/articles/img3.png" alt="">
+              <p class="mt-12">
+                Neste caderno especial, o jornal estreia a editoria A TARDE Bairros com a história do mais novo bairro de Salvador, o Aquarius, que foi desmembrado da Pituba e faz divisa com o Caminho das Árvores. Criado através da Lei Municipal 9.778/2024, publicada em 26 de janeiro deste ano, no Diário Oficial do Município, o Aquarius se tornou o 171º bairro da capital baiana. Em 11 de julho, o Decreto Municipal 38.776 delimitou as suas poligonais e alterou as da Pituba. Com o status de bairro, Aquarius será incluído no mapa da área urbana da cidade, terá placas de sinalização viária e entrará na próxima pesquisa do Censo do Instituto Brasileiro de Geografia e Estatísticas (IBGE).
+                <br/>
+                <br/>
+                O Aquarius tem características especiais que fazem dele um bairro diferenciado. Foi planejado para oferecer aos moradores qualidade de vida e diversas comodidades e serviços em um mesmo local, permitindo acesso, a pé, a escolas, restaurantes, mercado, padaria, bancas de revista e de frutas e verduras, farmácias, teatro e até um hospital. Bonita, agradável, arborizada, prática e segura, é uma localidade atraente para frequentar e residir, hoje considerada uma das melhores para se viver em Salvador.
+                <br/>
+                <br/>
+                O bairro possui, ao todo, 330 mil metros quadrados, que englobam sete ruas e a marginal da Avenida Professor Magalhães Neto. Tem 40 condomínios de alto padrão e projetos arquitetônicos de alto valor estético, com infraestrutura completa de lazer. Existem atualmente quatro edifícios em construção.
+                <br/>
+                <br/>
+                Segundo a Associação dos Condomínios Residenciais, Comerciais e Mistos do Aquarius (AmeAquarius), hoje há cerca de 14 mil moradores e mais de 10 mil pessoas circulam diariamente no bairro para acessar serviços de saúde e de educação, além do comércio e das áreas públicas de lazer, com destaque para a Praça Aquarius, com mais de dez mil metros quadrados.
+                <br/>
+                <br/>
+                Também são opções de lazer a recém-qualificada Praça Dr. Shóstenes Tavares de Macêdo, com sete mil metros quadrados, e a Rua Manoel Philomeno de Miranda, que se tornou uma extensão da Praça Aquarius, com boulevard, jardins, bancos de madeira, piso intertravado, ciclovia e espaço para caminhadas.
+                <br/>
+                <br/>
+                A maior delas, a Praça Aquarius, possui um lindo paisagismo, palmeiras, flores e jardins, brinquedos para as crianças, um anfiteatro, um espaço para troca de livros e leitura, pergolados que decoram a praça e oferecem sombra, mesas e cadeiras de ferro, pisos intertravados, barraca de acarajé, água e cerveja, ponto de aluguel de bicicletas patrocinadas, banheiros químicos, ciclovia, grupos de corrida, parque infantil, um dog park (ou cachorródromo) e equipamentos de ginástica.
+                <br/>
+                <br/>
+                Entre as comodidades oferecidas pelo bairro, estão o centro comercial Ambassador e o Shopping Aquarius, que abrigam dois restaurantes japoneses, uma delicatessen, uma doceria, uma galeteria, uma loja de açaí, um brechó chique, loja de moda infantil, salão de beleza, pet shop, um mercado, uma lavanderia, loja de presentes e perfumaria, um restaurante de comida brasileira e lanchonete.
+                <br/>
+                <br/>
+                No bairro, o morador pode frequentar, a pé, o Mc Donalds, a Pizza Hut, o restaurante Coco Bambu, a academia de ginástica Alpha Fitness e a escola de Natação e Hidroginástica Aquarius Water Sports. Faz parte do bairro também o moderno Hotel Mercure, pertencente ao grupo francês Accor, de quatro estrelas.
+                <br/>
+                <br/>
+                O Aquarius conta ainda com quatros escolas particulares, que ofertam ensino de excelência. O Colégio Gregor Mendel, o mais antigo construído no bairro, em 1988, oferece Ensino Fundamental e Ensino Médio. O Colégio Módulo, inaugurado em 1992, na Avenida Magalhães Neto, disponibiliza Educação Infantil e Básica nos níveis Fundamental I e II e Ensino Médio. A Escola Nova Nossa Infância, construída em 2000, tem 2 mil metros quadrados e quatro pisos, na Rua Professor Carlos Sá, logo na subida da Praça Aquarius, e oferece Educação Infantil e Ensino Fundamental I.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative z-50 bg-gray-800 text-white py-6">
+      <div
+        class="container mx-auto px-4 flex flex-col items-center justify-between"
+      >
+        <div class="text-center">
+          <p class="text-sm">
+            &copy; 2024 AmeAquarius. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- scroll reveal js -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+  </body>
+</html>

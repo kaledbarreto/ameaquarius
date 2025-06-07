@@ -786,12 +786,20 @@ video {
   margin-top: 80px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-0 {
@@ -1181,6 +1189,10 @@ video {
 .bg-yellow-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#facc15ec\] {
+  background-color: #facc15ec;
 }
 
 .bg-hero {

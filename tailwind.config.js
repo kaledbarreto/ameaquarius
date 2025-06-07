@@ -33,6 +33,10 @@ module.exports = {
           secondary: "#f4f0ec",
           hover: "#b88c5d",
         },
+        yellow: {
+          DEFAULT: "#facc15",
+          secondary: "#fef9c3",
+        }
       },
     },
   },

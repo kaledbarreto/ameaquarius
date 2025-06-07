@@ -1,100 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="/dist/output.css" />
-    <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
-    />
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  </head>
-  <body class="bg-gray-100">
-    <!-- header -->
-    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
-      <div class="container mx-auto flex justify-between h-full items-center">
-        <!-- logo -->
-        <img class="h-[50px]" src="assets/logo.png" alt="" />
-        <!-- nav -->
-        <nav>
-          <!-- nav mobile trigger -->
-          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
-            <i class="ri-menu-line text-4xl text-primary"></i>
-          </div>
+    <title>Cursos</title>
 
-          <ul
-            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
-            id="nav_menu"
-          >
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f3f4f6;
+        margin: 0;
+        font-family: sans-serif;
+        min-height: 100vh;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        height: 90px;
+        background: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 30;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+
+      main {
+        background: white;
+        min-height: 100vh;
+        overflow: hidden;
+        max-width: 1920px;
+        margin: 0 auto;
+      }
+
+      section {
+        margin-top: 32px;
+        margin-bottom: 48px;
+        position: relative;
+        z-index: 20;
+      }
+
+      .section-content {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 32px;
+        background: white;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #f87171;
+        margin-bottom: 16px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      .highlight-box {
+        background-color: #fef9c3;
+        border: 1px solid #facc15;
+        border-radius: 4px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+
+      .important-box {
+        background-color: #fecaca;
+        border: 1px solid #f87171;
+        border-radius: 4px;
+        padding: 16px;
+        margin-top: 32px;
+      }
+
+      ul {
+        margin-bottom: 16px;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 4px;
+      }
+
+      .summary {
+        margin-bottom: 24px;
+      }
+
+      .summary h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .gallery {
+        margin-top: 32px;
+      }
+
+      .gallery h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      @media (min-width: 768px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .gallery-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        max-height: 352px;
+      }
+
+      .pdf-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+      }
+
+      .pdf-section h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .pdf-section a {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 8px 16px;
+        background-color: #2563eb;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      .pdf-section a:hover {
+        background-color: #1d4ed8;
+      }
+
+      footer {
+        background-color: #1f2937;
+        color: white;
+        padding: 24px 0;
+        text-align: center;
+      }
+
+      .menu-icon {
+        font-size: 2rem;
+        color: #2563eb;
+        cursor: pointer;
+        display: none;
+      }
+
+      @media (max-width: 1024px) {
+        nav ul {
+          position: fixed;
+          top: 90px;
+          left: 0;
+          right: 0;
+          height: 0;
+          overflow: hidden;
+          background: white;
+          flex-direction: column;
+          border-top: 1px solid #ccc;
+          transition: height 0.3s ease;
+        }
+
+        .menu-icon {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="assets/logo.png" alt="Logo" style="height: 50px" />
+        <nav>
+          <div class="menu-icon" id="nav_trigger_btn"><i class="ri-menu-line"></i></div>
+          <ul id="nav_menu">
             <li><a href="index.html">Home</a></li>
-            <li><a id="sobre_menu_item" href="about.html">Sobre</a></li>
-            <li><a id="noticias_menu_item" href="news.html">Noticias</a></li>
-            <li><a id="eventos_menu_item" href="events.html">Eventos</a></li>
-            <li><a id="courses_menu_item" href="courses.html">Cursos</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="news.html">Notícias</a></li>
+            <li><a href="events.html">Eventos</a></li>
+            <li><a href="courses.html">Cursos</a></li>
             <li><a href="documents.html">Documentos</a></li>
-            <li><a id="contato_menu_item" href="contact.html">Contato</a></li>
+            <li><a href="contact.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- page wrapper -->
-    <main class="min-h-[calc(100vh-90px)] flex justify-center">
-      <!-- Cursos -->
-      <section class="courses relative z-20 py-16">
-        <div class="container mx-auto px-4 flex flex-col items-center gap-2">
-          <h1 class="text-2xl font-bold mb-4">PROJETO PRÉDIO SEM FOGO</h1>
-          <p class="mb-4">
-            O Corpo de Bombeiros Militar da Bahia, através do Projeto <strong>"Prédio Sem Fogo"</strong>, realiza treinamento para funcionários de prédios e condomínios verticais que mantenham vínculo empregatício, devidamente comprovados, com o empreendimento.
-          </p>
+    <main>
+      <section>
+        <div class="section-content">
+          <h1>PROJETO PRÉDIO SEM FOGO</h1>
 
-          <p class="mb-4">
-            O objetivo é capacitar esses profissionais para que saibam agir corretamente diante de uma emergência — seja na prevenção, no início de um acidente ou na prestação da primeira resposta.
-          </p>
+          <p>O Corpo de Bombeiros Militar da Bahia, através do Projeto <strong>"Prédio Sem Fogo"</strong>, realiza treinamento para funcionários de prédios e condomínios verticais que mantenham vínculo empregatício, devidamente comprovados, com o empreendimento.</p>
 
-          <p class="mb-4">
-            São oferecidos treinamentos em conhecimentos básicos de incêndio e primeiros socorros. A duração é de <strong>8 horas/aula</strong>, das <strong>08h às 17h</strong>, sempre às <strong>quintas-feiras</strong>.
-          </p>
+          <p>O objetivo é capacitar esses profissionais para que saibam agir corretamente diante de uma emergência — seja na prevenção, no início de um acidente ou na prestação da primeira resposta.</p>
 
-          <div class="mb-4 p-4 bg-[#facc15ec] rounded border border-yellow-400">
+          <p>São oferecidos treinamentos em conhecimentos básicos de incêndio e primeiros socorros. A duração é de <strong>8 horas/aula</strong>, das <strong>08h às 17h</strong>, sempre às <strong>quintas-feiras</strong>.</p>
+
+          <div class="highlight-box">
             <p><strong>Datas disponíveis:</strong></p>
-            <ul class="list-disc list-inside">
+            <ul>
               <li>28/05 (terça-feira)</li>
               <li>11/06 (terça-feira)</li>
             </ul>
-            <p class="mt-2 text-sm">⚠️ Outras datas poderão ser abertas conforme a demanda e disponibilidade.</p>
+            <p class="text-sm">⚠️ Outras datas poderão ser abertas conforme a demanda e disponibilidade.</p>
+          </div>
+
+          <p>O cadastramento é gratuito. Para se inscrever, o condomínio deve enviar e-mail para:</p>
+
+          <ul>
+            <li><a href="mailto:treinamentosameaquarius@gmail.com">treinamentosameaquarius@gmail.com</a></li>
+            <li><a href="mailto:prediosemfogo@cbm.ba.gov.br">prediosemfogo@cbm.ba.gov.br</a></li>
+          </ul>
+
+          <p>Após o contato, será enviada uma ficha de inscrição para preenchimento com os dados do condomínio e dos funcionários participantes. Também será necessário anexar cópias de documentos que comprovem o vínculo empregatício. Após análise, serão confirmadas as datas para participação.</p>
+
+          <div class="summary">
+            <h2>Resumo do Evento</h2>
+            <ul>
+              <li><strong>Evento:</strong> Projeto Prédio Sem Fogo</li>
+              <li><strong>Quando:</strong> Quintas-feiras (a partir de 28/05 e 11/06)</li>
+              <li><strong>Horário:</strong> Das 8h às 17h</li>
+              <li><strong>Público:</strong> Funcionários de condomínios verticais (porteiros, zeladores etc.)</li>
+              <li><strong>Inscrição:</strong> Envie e-mail para os endereços acima</li>
+            </ul>
+          </div>
+
+          <div class="important-box">
+            <p><strong>Importante:</strong> Conforme orientação do Corpo de Bombeiros, este projeto está direcionado para todos os condomínios residenciais do bairro.<br />➡️ A participação de representantes de empresas ocorrerá futuramente, em momento específico voltado à formação da Brigada de Incêndio Voluntária.</p>
+          </div>
+
+          <div class="gallery">
+            <h2>Galeria do Projeto</h2>
+            <div class="gallery-grid">
+              <img src="assets/courses/courses01.jpg" alt="Imagem 1" />
+              <img src="assets/courses/courses02.jpg" alt="Imagem 2" />
+            </div>
+          </div>
+
+          <div class="pdf-section">
+            <h2>Baixar Informações em PDF</h2>
+            <a href="assets/documents/Projeto Prédio sem Fogo.pdf" target="_blank">Download do PDF</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="relative z-50 bg-gray-800 text-white py-6">
-      <div
-        class="container mx-auto px-4 flex flex-col items-center justify-between"
-      >
-        <div class="text-center">
-          <p class="text-sm">
-            &copy; 2024 AmeAquarius. Todos os direitos reservados.
-          </p>
-        </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 AmeAquarius. Todos os direitos reservados.</p>
       </div>
     </footer>
 
-    <!-- main js -->
     <script src="js/main.js"></script>
-    <!-- scroll reveal js -->
     <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>
